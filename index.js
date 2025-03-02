@@ -21,7 +21,7 @@ function initButtonCharacterStagger() {
   });
 }
 
-function navShowInit() {
+function initNavShow() {
   const topTrigger = document.querySelector(".navbar_top-trigger");
   const bottomTrigger = document.querySelector("[nav-bottom-trigger]");
   const target = document.querySelector(".navbar_component");
@@ -45,7 +45,7 @@ function navShowInit() {
   }
 }
 
-function navbarMenuBtnInit() {
+function initNavbarMenuBtn() {
   const menuOpenBtn = document.querySelector("[menu-open-btn]");
   const menuCloseBtn = document.querySelector("[menu-close-btn]");
   const menuContainer = document.querySelector("[menu-container]");
@@ -89,7 +89,7 @@ function navbarMenuBtnInit() {
   });
 }
 
-function testimonialsSliderInit() {
+function initTestimonialsSlider() {
   const swiper = new Swiper(".swiper", {
     // Optional parameters
     loop: true,
@@ -178,7 +178,7 @@ function initDynamicCurrentTime() {
   setInterval(updateTime, 1000);
 }
 
-function footerYearUpdateinit() {
+function initFooterYearUpdate() {
   const YEAR_SELECTOR = '[footer="year"]';
   const yearSpan = document.querySelector(YEAR_SELECTOR);
   if (!yearSpan) return;
@@ -188,9 +188,9 @@ function footerYearUpdateinit() {
 
 function initScript() {
   initButtonCharacterStagger();
-  navShowInit();
-  navbarMenuBtnInit();
-  testimonialsSliderInit();
+  initNavShow();
+  initNavbarMenuBtn();
+  initTestimonialsSlider();
   initDynamicCurrentTime();
-  footerYearUpdateinit();
+  initFooterYearUpdate();
 }
