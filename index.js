@@ -185,3 +185,12 @@ function footerYearUpdateinit() {
   const currentYear = new Date().getFullYear();
   yearSpan.innerText = currentYear.toString();
 }
+
+function initScript() {
+  initButtonCharacterStagger();
+  navShowInit();
+  navbarMenuBtnInit();
+  testimonialsSliderInit();
+  initDynamicCurrentTime();
+  footerYearUpdateinit();
+}
